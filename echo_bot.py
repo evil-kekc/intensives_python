@@ -5,8 +5,8 @@ import os
 
 
 logging.basicConfig(level=logging.DEBUG, filename="mylog.log",
-                        format="%(asctime)s | %(levelname)s | %(funcName)s: %(lineno)d | %(message)s",
-                        datefmt='%H:%M:%S')  # Добавили логгирование
+                    format="%(asctime)s | %(levelname)s | %(funcName)s: %(lineno)d | %(message)s",
+                    datefmt='%H:%M:%S')  # Добавили логгирование
 
 bot = Bot(os.environ.get('TOKEN'))  # Создаем экземпляр бота и передаем токен из venv
 dp = Dispatcher(bot)  # Создаем экземпляр диспетчера
@@ -25,10 +25,3 @@ async def start_message(message: types.Message):
 if __name__ == '__main__':  # Проверка "прямого" запуска программы
     print('bot polling started')  # Сообщение о том, что бот был запущен
     executor.start_polling(dp)  # Запуск бота "polling-ом"
-
-
-
-
-
-
-
