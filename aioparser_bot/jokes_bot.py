@@ -29,7 +29,6 @@ async def start_message(message: types.Message):  # Функция, работа
 @dp.callback_query_handler(lambda callback: callback.data == 'joke_button')  # Декоратор, "отлавливающий" нажатие inline-кноки
 async def get_joke(callback_query: types.CallbackQuery):  # Функция, которая вызывает парсер
     global list_of_jokes
-    print(callback_query.data)
     if len(list_of_jokes) == 0:  # Проверка наличия анекдотов в списке
         await bot.send_message(callback_query.from_user.id, f'Обновите базу данных анекдотов',
                                reply_markup=update_base_kb)
