@@ -47,4 +47,4 @@ ______
 # Контакты
 
 Artem Troshkin - 3371824@gmail.com
-Telegram - [@evil_kekc](t.me/evil_kekc)
+Telegram - [@evil_kekc](https://t.me/evil_kekc)
